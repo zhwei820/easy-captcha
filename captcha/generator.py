@@ -135,7 +135,7 @@ class BaseGenerator:
         return font
 
     def _rand_rotate(self, image: Image):
-        angel = random.randint(0, 360)
+        angel = random.randint(-90, 90)
         image = self._rotate(image, angel)
         return image
 
