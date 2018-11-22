@@ -227,8 +227,8 @@ class BaseGenerator:
                          number: int = 1):
 
         for _ in range(number):
-            start_angel = random.randint(0, 360)
-            stop_angel = random.randint(0, 360)
+            start_angel = random.randint(-90, 90)
+            stop_angel = random.randint(-90, 90)
             self._noise_arc(image,
                             start_angel=start_angel,
                             stop_angel=stop_angel)
