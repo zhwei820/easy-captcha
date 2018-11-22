@@ -236,7 +236,7 @@ class BaseGenerator:
     def _noise_line(self, image: Image,
                     xy: list = None,
                     color: ImageColor = None,
-                    width: int = 5,
+                    width: int = 2,
                     joint=None):
 
         box = xy if xy else self._rand_rect(image)
